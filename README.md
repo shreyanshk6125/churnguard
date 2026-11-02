@@ -51,6 +51,15 @@ The deployed application downloads the dataset directly from IBM's public reposi
 7. **Threshold Selection:** Selected a classification threshold of 0.30 to improve the balance of churn-class precision and recall.
 8. **Deployment:** Saved the preprocessing and prediction pipeline using Joblib and integrated it into Streamlit.
 
+
+## Screenshots
+
+### 1. Overview Dashboard
+![ChurnGuard Overview](screenshots/overview.png)
+
+### 2. Churn Prediction
+![Churn Prediction](screenshots/prediction.png)
+
 ## 📈 Model Performance
 
 The selected Logistic Regression model uses a classification threshold of **0.30**.
