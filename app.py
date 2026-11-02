@@ -35,12 +35,13 @@ threshold = model_bundle["threshold"]
 # 3. LOAD CUSTOMER DATASET
 # ==================================================
 
+
 @st.cache_data
 def load_customer_data():
 
-    df = pd.read_csv(
-        "data/WA_Fn-UseC_-Telco-Customer-Churn.csv"
-    )
+    url = "https://raw.githubusercontent.com/IBM/telco-customer-churn-on-icp4d/master/data/Telco-Customer-Churn.csv"
+
+    df = pd.read_csv(url)
 
     df["TotalCharges"] = pd.to_numeric(
         df["TotalCharges"],
